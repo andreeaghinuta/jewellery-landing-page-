@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap");
+h1 {
+  font-family: "Amiri", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #050505;
+  text-align: center;
+  letter-spacing: 5px;
+  border: 1px solid #050505;
+}
+
+h2 {
+  font-family: "Amiri", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #050505;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 30px 0 20px;
+}
+
+h3 {
+  font-family: "Amiri", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #050505;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-family: "Amiri", serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+p {
+  font-family: "Amiri", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #050505;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  border: none;
+  text-decoration: none;
+}
+
+.catalog-header p {
+  text-transform: lowercase;
+}
+
+.catalog-indexable .indexable-filters ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100vw;
+  justify-content: flex-start;
+}
+.catalog-indexable .indexable-filters ul li {
+  list-style: none;
+  border-radius: 50px;
+  border: 2px black;
+}
+.catalog-indexable .indexable-filters ul li a {
+  text-decoration: none;
+  font-family: "Amiri", serif;
+  font-size: 12px;
+  color: #050505;
+  letter-spacing: 3px;
+  border-radius: 50px;
+  border: 2px black;
+  text-decoration: none;
+}
+
+.product-list-earrings {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  margin-left: 10px;
+}
+.product-list-earrings img {
+  margin: auto;
+  width: 160px;
+  height: 200px;
+} /*# sourceMappingURL=style-catalog-product-card.css.map */
