@@ -67,6 +67,10 @@ p {
   justify-content: space-between;
   text-align: center;
   padding: 15px 15px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
 }
 .hero header a {
   color: #050505;

@@ -7,6 +7,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: "Amiri", serif;
 }
 
 .hero {
@@ -25,7 +26,7 @@
         position: absolute;
         top: 0;
         width: 100%;
-        z-index: 2;
+        z-index: 9;
 
         a {
             color: $black;
@@ -122,11 +123,18 @@
         text-align: center;
         width: 100vw;
         overflow: hidden;
+
+        .owl-nav {
+            font-size: 36px;
+
+            .owl-prev {
+                margin-right: 25px;
+            }
+        }
     }
 
     .carousel-slide img {
         height: 250px;
-        margin: 0 15px;
     }
 
     button {
@@ -304,9 +312,16 @@ footer {
     }
 
     @media screen and (min-width: 727px) {
+        .carousel-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .our-bestsellers .carousel-wrapper .carousel-slide img {
-            width: 300px;
-            height: 300px;
+            width: 350px;
+            height: 350px;
+            align-items: center;
         }
     }
 
@@ -476,4 +491,8 @@ footer {
             margin-bottom: 24;
         }
     }
+}
+
+.owl-dots {
+    display: none;
 }

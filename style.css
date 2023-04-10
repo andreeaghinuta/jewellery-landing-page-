@@ -52,6 +52,7 @@ p {
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Amiri", serif;
 }
 
 .hero {
@@ -70,7 +71,7 @@ p {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 9;
 }
 .hero header a {
   color: #050505;
@@ -157,9 +158,14 @@ p {
   width: 100vw;
   overflow: hidden;
 }
+.our-bestsellers .carousel-wrapper .owl-nav {
+  font-size: 36px;
+}
+.our-bestsellers .carousel-wrapper .owl-nav .owl-prev {
+  margin-right: 25px;
+}
 .our-bestsellers .carousel-slide img {
   height: 250px;
-  margin: 0 15px;
 }
 .our-bestsellers button {
   background-color: transparent;
@@ -311,9 +317,16 @@ footer div {
   }
 }
 @media screen and (min-width: 640px) and (min-width: 727px) {
+  .carousel-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .our-bestsellers .carousel-wrapper .carousel-slide img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+    align-items: center;
   }
 }
 @media screen and (min-width: 640px) and (min-width: 760px) {
@@ -464,4 +477,7 @@ footer div {
     padding-top: 30;
     margin-bottom: 24;
   }
+}
+.owl-dots {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
