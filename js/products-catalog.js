@@ -151,7 +151,17 @@ for (let i of products.data) {
   price.innerText = "$" + i.price;
   container.appendChild(price);
 
+  let subContainer = document.createElement("div");
+  subContainer.classList.add("sub-container");
+  //add to cart button
+  let addToCartBtn = document.createElement("button");
+  addToCartBtn.classList.add("add-to-cart");
+  addToCartBtn.innerHTML = "Add to cart";
+  subContainer.appendChild(addToCartBtn);
+  //add to faves button
+
   card.appendChild(container);
+  card.appendChild(subContainer);
   document.getElementById("products").appendChild(card);
 }
 
@@ -212,6 +222,36 @@ document.getElementById("search").addEventListener("click", () => {
 window.onload = () => {
   filterProduct("all");
 };
+
+const addCart = document.querySelectorAll(".add-to-cart");
+const cartShow = document.querySelector(".nav_listicon span");
+
+for (var i = 0; i < addCart.length; i++) {
+  addCart[i].addEventListener("click", () => {
+    cartCount();
+  });
+}
+
+function cartCount() {
+  let prdCount = localStorage.getItem("cartsCount");
+  prdCount = parseInt(prdCount);
+  if (prdCount) {
+    localStorage.setItem("cartsCount", prdCount + 1);
+    cartShow.textContent = prdCount + 1;
+  } else {
+    localStorage.setItem("cartsCount", 1);
+    cartShow.textContent = prdCount = 1;
+  }
+}
+
+function displayCart() {
+  let prdCount = localStorage.getItem("cartsCount");
+  if (prdCount) {
+    cartShow.textContent = prdCount;
+  }
+}
+
+displayCart();
 
 // Pagination
 

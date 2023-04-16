@@ -129,6 +129,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  background-color: #5e7172;
   text-align: center;
   margin: 0 15px;
   opacity: 0.8;
@@ -169,4 +170,10 @@ ul li.active {
 .btn1:hover,
 .btn2:hover {
   opacity: 1;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }/*# sourceMappingURL=style-catalog-product-card.css.map */

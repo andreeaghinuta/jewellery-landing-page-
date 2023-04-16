@@ -227,4 +227,22 @@ p {
     text-decoration: none;
     text-shadow: 0.5px 1px #050505;
   }
+}
+.add-to-cart {
+  text-transform: uppercase;
+  background-color: #e0d3cc;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.add-to-cart:hover {
+  background-color: rgba(94, 113, 114, 0.8);
+  color: #e0d3cc;
+}
+
+.product-counter {
+  font-size: 12px;
+  background-color: #5e7172;
+  border-radius: 50%;
+  padding: 2px;
 }/*# sourceMappingURL=header.css.map */
