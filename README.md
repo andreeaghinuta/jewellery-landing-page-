@@ -8,3 +8,7 @@ The project is a responsive modern website for a fictive jewellery shop. The web
 
 The application includes two pages: home page and catalog products.
 
+
+To install: 
+https://owlcarousel2.github.io/OwlCarousel2/
+
